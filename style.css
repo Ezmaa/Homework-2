@@ -1,3 +1,4 @@
+/* ALL */
 * {
     box-sizing: border-box;
 }
@@ -8,16 +9,20 @@ body {
     display: block;
 }
 
+.center-text {
+    text-align: center;
+}
+
+/* HEADER */
 header {
     display: flex;
     justify-content: space-between;
     padding: 20px;
     background: ;
-    background:  #555555  ;
-    color:black;
+    background: #555555;
+    color: black;
     font-size: 30px;
 }
-
 
 nav {
     display: flex;
@@ -33,17 +38,27 @@ nav a {
 }
 
 main {
-    display: flex;
+    max-width: 100%;
+    margin: auto;
 }
 
-aside {
-    flex: 15%;
-    background-color: #9370db;
-    padding: 20px;
-    flex-wrap: wrap;
-    font-size: 20px;
-  }
+.about-me {
+    display: flex;
+    align-items: center;
+}
 
+.about-me img {
+    max-width: 23%;
+}
+
+p {
+    list-style: none;
+}
+
+#work {
+    display: flex;
+    flex-wrap: wrap;
+}
 
 .tabs {
     flex: 1 0 200px;
@@ -53,34 +68,35 @@ aside {
     border-width: 2px;
 }
 
-p {
-   list-style: none;
-}
-
-img {
-  max-width: 100%;
-  max-height: 100%;
-}
-
 #big {
-    flex: 2 1 200px;
-  }
+    display: flex;
+    width: 150px;
+}
 
-/* Tablets - header changes color */
 @media screen and (max-width: 992px) {
     header {
-      background: #772014;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
     }
-  }
-  
-  /* Large smartphones - navbar changes color */
-  @media screen and (max-width: 768px) {
+
+    main {
+        justify-content: center;
+    }
+
     nav {
-      background-color: #bb8588;
+        flex-direction: column;
     }
-  }
-  
-  /* Small smartphones - image placeholders change color */
-  @media screen and (max-width: 576px) {
-    .sample-img {
-      background-color: #8ac4ff;
+}
+
+
+@media screen and (max-width: 768px) {
+    main {
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    main {
+        flex-direction: column;
+    }
