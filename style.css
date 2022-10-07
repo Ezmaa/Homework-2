@@ -19,8 +19,8 @@ header {
     justify-content: space-between;
     padding: 20px;
     background: ;
-    background: #555555;
-    color: black;
+    background: black;
+    color: white;
     font-size: 30px;
 }
 
@@ -34,28 +34,37 @@ nav a {
     text-decoration: none;
     display: block;
     font-size: 30px;
-    color: black;
+    color: white;
 }
 
 main {
     max-width: 100%;
     margin: auto;
+    font-size: 25px;
+    background-color: darkgrey;
 }
 
 .about-me {
     display: flex;
-    align-items: center;
 }
 
 .about-me img {
-    max-width: 23%;
+    max-width: 50%;
+    text-align: left;
+}
+
+h3 {
+    font-size: 30px;
+    text-decoration: underline;
+    text-align: center;
 }
 
 p {
     list-style: none;
+    padding-right: 200px;
 }
 
-#work {
+.work {
     display: flex;
     flex-wrap: wrap;
 }
@@ -63,16 +72,39 @@ p {
 .tabs {
     flex: 1 0 200px;
     padding: 10px;
-    text-align: center;
-    border-style: solid;
-    border-width: 2px;
 }
 
-#big {
+img {
+    position: relative;
+    color: white;
+}
+
+#big img {
     display: flex;
-    width: 150px;
+    width: 70%;
+    margin: auto;
 }
 
+.work-section {
+    display: flex;
+}
+
+.work-section img {
+    width: 100%;
+    padding: 10px;
+
+}
+
+ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+}
+
+li {
+    margin: 5px;
+    padding: 5px;
+}
 @media screen and (max-width: 992px) {
     header {
         display: flex;
