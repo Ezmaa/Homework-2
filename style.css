@@ -26,13 +26,11 @@ header {
 
 nav {
     display: flex;
-    text-decoration: none;
 }
 
 nav a {
     padding: 50px;
     text-decoration: none;
-    display: block;
     font-size: 30px;
     color: white;
 }
@@ -42,31 +40,39 @@ main {
     margin: auto;
     font-size: 25px;
     background-color: darkgrey;
+    background-image: url("https://lh3.googleusercontent.com/2kiPVoPSVBgnnxYQvzLPX5DrH1vXOD5_gEfryS3j8vnF51Fe9fx9lqOrl6WTyPSG8B3BAlnlVvN82DrpBSK32CIzI6lvBQPXbgxsfbcVn8ZebA1oxnsIxoZRpLyHfJ2Fiw8H7Ch9wgpoWnNNBS1_eyJXe_v_MFMTBEM9UuYxbFJWtVN4twUIauFoKFcMTx7GKOmT_wGoQcYAACG0w2rWqNGdhRHelk9XXD9WRXUrK3UrFPCkEPeodkw82x08eiCoAXiPk4OGZ46DhpG9WAAF4wXtf4i_1woZruiV0YqrnCdZpAGezUPHQMU84LJayJwUmLr_eFSQRqNQ3jqS1o96IDRhpSTyxF5M0dLDcx_Z4Gp9zw5KDDUMoF01r1ziC5UQouztiMH2SKeS3as-M8ynvcEACgDdrjIqf7txVmGaNXQH9YmYSO45J8-LkUp87bkF0qzjDsjrBd2Y_hRwa9hESSu_XmHD0HULypnHWdnKqqGSaz9UfG9DvlR4mYJ5-JaiL2pjHczkzbNImbfuXARB3IVu3UkSSFCXu8cTdi8TZ7_BKBcIGHQbLNO9itrhERGy2yoXGj32qxOj0dwAHWnaADH2wifVPZmbUbHO2MR_jMq1Lw2EQI3lgvDSAhsUsXxLQ7UL8NZdwbmvCabHl4qF3Fvnl-kKoBDtNZLiJHDKeB6ATOxv22DpRIR271cs8F2MEpZLVmkplEOPas5RkXUqbsqhQRf2IaIpJTAYkqFfw3bPwsnY6izNn4Q6WlwNjxnzJB-sGazCvKEqVu8hNtL6cFfLon-uMrCdXdRmkYiaduad-0j_H4PJszp1UH4XDZ4e8oLCmJoNIT22fqGgDKcfa97kBj0pOdqcrLeDnvlVweNjI9SHvWJH5STKP3ukYHFqFTBSEgN-gG9u9BJrtiWAAmP2Up2CdF9U8mEDbaPRbEG6wEEsFebx4Y-s5BfUtov13E2bxIB26Sc=w2290-h1526-no?authuser=0");
+
 }
 
+
+/* About me Section */
 .about-me {
     display: flex;
+    position: relative;
+    left: 100px;
 }
 
 .about-me img {
     max-width: 50%;
-    text-align: left;
 }
 
+p {
+    position: relative;
+    right: 150px;
+    display: flex;
+}
+
+/* section headers */
 h3 {
     font-size: 30px;
     text-decoration: underline;
     text-align: center;
 }
 
-p {
-    list-style: none;
-    padding-right: 200px;
-}
-
+/* Work section */
 .work {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .tabs {
@@ -90,11 +96,12 @@ img {
 }
 
 .work-section img {
+    padding: 20px;
     width: 100%;
-    padding: 10px;
-
+    height: 300px;
 }
 
+/* Contact Section */
 ul {
     list-style-type: none;
     display: flex;
@@ -105,6 +112,8 @@ li {
     margin: 5px;
     padding: 5px;
 }
+
+/* Media Query */
 @media screen and (max-width: 992px) {
     header {
         display: flex;
@@ -119,6 +128,10 @@ li {
     nav {
         flex-direction: column;
     }
+
+    .tabs {
+        display: flex;
+    }
 }
 
 
@@ -132,3 +145,5 @@ li {
     main {
         flex-direction: column;
     }
+
+}
