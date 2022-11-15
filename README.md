@@ -7,3 +7,8 @@ This portfolio project showcases some of the projects I have worked on for futur
 
 
 https://ezmaa.github.io/Portfolio-Project/
+
+Drink Outside The Box Project 
+
+![dotb](https://user-images.githubusercontent.com/112808494/201798433-365b9117-1f35-45ca-80f4-69c4c03afc19.png)
+![IMG_4712](https://user-images.githubusercontent.com/112808494/201798445-202f1cec-b5c9-47fc-b378-9b365ecd3373.jpeg)
